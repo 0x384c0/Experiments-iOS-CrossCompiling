@@ -79,6 +79,8 @@
 		4958579A1DDD66AC002CDA91 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 495857851DDD66AB002CDA91 /* libtiff.a */; };
 		4958579C1DDD6746002CDA91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4958579B1DDD6746002CDA91 /* CoreGraphics.framework */; };
 		4958579E1DDD6775002CDA91 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4958579D1DDD6775002CDA91 /* libxml2.tbd */; };
+		495857A61DDD7820002CDA91 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495857A51DDD7820002CDA91 /* StreamViewController.m */; };
+		495857A81DDD7C85002CDA91 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 495857A71DDD7C85002CDA91 /* resource.bundle */; };
 		B102ACDEC6DD76F7C98C955D /* Pods_Experiments_iOS_CrossCompiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4ECEA7317273AF349463FB3 /* Pods_Experiments_iOS_CrossCompiling.framework */; };
 /* End PBXBuildFile section */
 
@@ -455,6 +457,9 @@
 		495857851DDD66AB002CDA91 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		4958579B1DDD6746002CDA91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4958579D1DDD6775002CDA91 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		495857A41DDD7820002CDA91 /* StreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamViewController.h; path = VC/StreamViewController.h; sourceTree = "<group>"; };
+		495857A51DDD7820002CDA91 /* StreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamViewController.m; path = VC/StreamViewController.m; sourceTree = "<group>"; };
+		495857A71DDD7C85002CDA91 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
 		B4ECEA7317273AF349463FB3 /* Pods_Experiments_iOS_CrossCompiling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiments_iOS_CrossCompiling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB16133D86BE101BF62AA313 /* Pods-Experiments-iOS-CrossCompiling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-CrossCompiling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-CrossCompiling/Pods-Experiments-iOS-CrossCompiling.debug.xcconfig"; sourceTree = "<group>"; };
 		C27E5ACC4AD4A6FE0EC30EA1 /* Pods-Experiments-iOS-CrossCompiling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-CrossCompiling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-CrossCompiling/Pods-Experiments-iOS-CrossCompiling.release.xcconfig"; sourceTree = "<group>"; };
@@ -480,12 +485,12 @@
 				495856D11DDC76E7002CDA91 /* GameController.framework in Frameworks */,
 				495856CF1DDC76BB002CDA91 /* AudioToolbox.framework in Frameworks */,
 				495856DB1DDC7759002CDA91 /* libbz2.tbd in Frameworks */,
-				495856D91DDC7749002CDA91 /* libz.tbd in Frameworks */,
 				495856D71DDC7740002CDA91 /* libiconv.tbd in Frameworks */,
 				495856CD1DDC76B0002CDA91 /* VideoToolbox.framework in Frameworks */,
 				4958568E1DDC703F002CDA91 /* libSDL2.a in Frameworks */,
 				4958568D1DDC703F002CDA91 /* libSDL2-simulator.a in Frameworks */,
 				4958568C1DDC703F002CDA91 /* libSDL2-device.a in Frameworks */,
+				495856D91DDC7749002CDA91 /* libz.tbd in Frameworks */,
 				495856871DDC703F002CDA91 /* libswresample.a in Frameworks */,
 				495856811DDC703F002CDA91 /* libswscale.a in Frameworks */,
 				495856841DDC703F002CDA91 /* libavfilter.a in Frameworks */,
@@ -546,6 +551,7 @@
 		495855B21DDC6F72002CDA91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				495857A71DDD7C85002CDA91 /* resource.bundle */,
 				495856E51DDD6654002CDA91 /* iphone.png */,
 				495856941DDC716C002CDA91 /* randSine_pcm_s16le_44100.wav */,
 				495856951DDC716C002CDA91 /* small.mp4 */,
@@ -885,6 +891,8 @@
 				495856B21DDC73A8002CDA91 /* TranscodeViewController.m */,
 				495856E21DDD660A002CDA91 /* IM_TestViewController.h */,
 				495856E31DDD660A002CDA91 /* IM_TestViewController.m */,
+				495857A41DDD7820002CDA91 /* StreamViewController.h */,
+				495857A51DDD7820002CDA91 /* StreamViewController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1235,6 +1243,7 @@
 				4958578C1DDD66AB002CDA91 /* log.xml in Resources */,
 				495855AB1DDC6E3F002CDA91 /* LaunchScreen.storyboard in Resources */,
 				4958578E1DDD66AB002CDA91 /* mime.xml in Resources */,
+				495857A81DDD7C85002CDA91 /* resource.bundle in Resources */,
 				4958578F1DDD66AB002CDA91 /* policy.xml in Resources */,
 				495855A81DDC6E3F002CDA91 /* Assets.xcassets in Resources */,
 				495857901DDD66AB002CDA91 /* quantization-table.xml in Resources */,
@@ -1315,6 +1324,7 @@
 				495855A11DDC6E3F002CDA91 /* AppDelegate.swift in Sources */,
 				495856BB1DDC73F6002CDA91 /* AVAudioPcmPlayer.swift in Sources */,
 				495856CB1DDC764C002CDA91 /* String.swift in Sources */,
+				495857A61DDD7820002CDA91 /* StreamViewController.m in Sources */,
 				495856C31DDC7474002CDA91 /* ArithmeticCastable.swift in Sources */,
 				495856E41DDD660A002CDA91 /* IM_TestViewController.m in Sources */,
 				495856C71DDC75A0002CDA91 /* AudioBuffer.swift in Sources */,

@@ -1,0 +1,17 @@
+PODS:
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - TheAmazingAudioEngine (1.5.6)
+
+DEPENDENCIES:
+  - Charts
+  - TheAmazingAudioEngine
+
+SPEC CHECKSUMS:
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+  TheAmazingAudioEngine: 0ed8c05486646373a48b22a341d31de42d1af2c3
+
+PODFILE CHECKSUM: 46a8288b9876a4e210d2d58a5c2270d25377face
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,3 @@
+module fftw3[extern_c] {
+    header "fftw3.h"
+}

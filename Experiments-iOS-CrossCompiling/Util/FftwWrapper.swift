@@ -2,7 +2,7 @@
 //  FftwWrapper.swift
 //  IOSExperiments
 //
-//  Created by 0x384c0   on 06.09.16.
+//  Created by 0x384c0 on 06.09.16.
 //  Copyright © 2016 0x384c0 . All rights reserved.
 //
 

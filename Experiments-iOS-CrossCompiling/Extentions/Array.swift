@@ -2,7 +2,7 @@
 //  Array.swift
 //  iosExperiments
 //
-//  Created by 0x384c0  on 1/25/16.
+//  Created by 0x384c0 on 1/25/16.
 //  Copyright © 2016 0x384c0. All rights reserved.
 //
 

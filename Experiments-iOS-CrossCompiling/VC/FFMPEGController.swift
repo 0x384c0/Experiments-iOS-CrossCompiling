@@ -2,7 +2,7 @@
 //  FFMPEGController.swift
 //  IOSExperiments
 //
-//  Created by 0x384c0   on 16.08.16.
+//  Created by 0x384c0 on 16.08.16.
 //  Copyright © 2016 0x384c0 . All rights reserved.
 //
 
@@ -57,7 +57,7 @@ class FFMPEGController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateChart), userInfo: nil, repeats: true)//TODO: init selector in constructor
-        RunLoop.main.add(self.timer!, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(self.timer!, forMode: RunLoop.Mode.common)
     }
     override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
@@ -216,7 +216,7 @@ class FFMPEGController: UIViewController {
         spectrumData = fftw.getPowerSpectrum(from: buffer1024)
     }
     
-    func updateChart(){
+    @objc func updateChart(){
         setChartData(spectrumData)
     }
     fileprivate func setChartData(_ data:[Double]?){

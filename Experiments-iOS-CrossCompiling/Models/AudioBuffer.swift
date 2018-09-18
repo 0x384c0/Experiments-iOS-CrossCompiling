@@ -2,7 +2,7 @@
 //  AudioBuffer.swift
 //  IOSExperiments
 //
-//  Created by 0x384c0   on 26.08.16.
+//  Created by 0x384c0 on 26.08.16.
 //  Copyright © 2016 0x384c0 . All rights reserved.
 //
 

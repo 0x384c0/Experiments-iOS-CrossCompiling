@@ -3,7 +3,7 @@
 //  IOSExperiments
 //
 //  Created by 0x384c0 on 16.08.16.
-//  Copyright © 2016 0x384c0 . All rights reserved.
+//  Copyright © 2016 0x384c0. All rights reserved.
 //
 
 import Foundation

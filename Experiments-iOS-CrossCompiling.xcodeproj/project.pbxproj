@@ -1472,7 +1472,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Experiments-iOS-CrossCompiling/libs/imageMagick",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0 .Experiments-iOS-CrossCompiling";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0.Experiments-iOS-CrossCompiling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1509,7 +1509,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Experiments-iOS-CrossCompiling/libs/imageMagick",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0 .Experiments-iOS-CrossCompiling";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0.Experiments-iOS-CrossCompiling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
